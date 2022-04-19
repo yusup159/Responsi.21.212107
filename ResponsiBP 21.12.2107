@@ -1,0 +1,20 @@
+
+fun main() {
+val isg: (Int, Int)-> Int = {l:Int, p:Int -> val luas = p*l
+luas}
+    print("Masukan Panjang Bangun : ")
+    var panjang = readLine()!!
+    var p = panjang.toInt()
+    print("Masukan Panjang Bangun : ")
+    var lebar = readLine()!!
+    var l =lebar.toInt()
+    
+    val luas = isg(p,l)
+    println("Luas : $luas" )
+    print("Keliling : ")
+    println(2.kp(p,l))    
+}
+
+fun Int.kp(p:Int,  l:Int):Int{
+    return this * (p+l)
+}
